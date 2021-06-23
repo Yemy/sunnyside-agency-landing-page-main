@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -59,7 +59,16 @@
 
       <section class="s-features">
         <article
-          class="s-features__container container container--text container--1"
+          class="s-features__container container container--img container--1"
+        >
+          <img
+            src="./images/mobile/image-transform.jpg"
+            alt="Image of egg"
+            class="container__img"
+          />
+        </article>
+        <article
+          class="s-features__container container container--text container--2"
         >
           <h2 class="container__heading">Transform your brand</h2>
           <p class="container__content">
@@ -68,15 +77,6 @@
             most of the marketing for you.
           </p>
           <button class="btn btn--learn-more container__btn">Learn more</button>
-        </article>
-        <article
-          class="s-features__container container container--img container--2"
-        >
-          <img
-            src="./images/mobile/image-transform.jpg"
-            alt="Image of egg"
-            class="container__img"
-          />
         </article>
         <article
           class="s-features__container container container--img container--3"
@@ -101,13 +101,25 @@
         <article
           class="
             s-features__container
-            container container--text-img container--5
+            container container--text-img container--text-img--1 container--5
           "
         >
-          <h3 class="container__heading container__heading--small">
+          <h3
+            class="
+              container__heading
+              container__heading--small
+              container__heading--graphic
+            "
+          >
             Graphic design
           </h3>
-          <p class="container__content container__content--center">
+          <p
+            class="
+              container__content
+              container__content--small
+              container__content--graphic
+            "
+          >
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
@@ -116,17 +128,74 @@
         <article
           class="
             s-features__container
-            container container--text-img container--6
+            container container--text-img container--text-img--2 container--6
           "
         >
-          <h3 class="container__heading container__heading--small">
+          <h3
+            class="
+              container__heading
+              container__heading--small
+              container__heading--photo
+            "
+          >
             Photography
           </h3>
-          <p class="container__content container__content--center">
+          <p
+            class="
+              container__content
+              container__content--small
+              container__content--photo
+            "
+          >
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
         </article>
+      </section>
+
+      <section class="s-testimonials">
+        <h3 class="s-testimonials__heading">Client testimonials</h3>
+        <div class="s-testimonials__grid">
+          <article class="s-testimonials__testimonial testimonial">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Marketing Director Photo"
+              class="testimonial__img"
+            />
+            <p class="testimonial__content">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h4 class="testimonial__name">Emily R.</h4>
+            <p class="testimonial__occup">Marketing Director</p>
+          </article>
+          <div class="s-testimonials__grid">
+            <article class="s-testimonials__testimonial testimonial">
+              <img
+                src="./images/image-thomas.jpg"
+                alt="Marketing Director Photo"
+                class="testimonial__img"
+              />
+              <p class="testimonial__content">
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <h4 class="testimonial__name">Thomas S.</h4>
+              <p class="testimonial__occup">Chief Operating Officer</p>
+            </article>
+            <div class="s-testimonials__grid">
+              <article class="s-testimonials__testimonial testimonial">
+                <img
+                  src="./images/image-jennie.jpg"
+                  alt="Marketing Director Photo"
+                  class="testimonial__img"
+                />
+                <p class="testimonial__content">
+                  ncredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                </p>
+                <h4 class="testimonial__name">Jennie F.</h4>
+                <p class="testimonial__occup">Business Owner</p>
+              </article>
+        </div>
       </section>
     </div>
 

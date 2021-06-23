@@ -1,14 +1,15 @@
 html {
   font-size: 55.5%;
-  font-family: "Barlow", sans-serif; }
+  font-family: "Barlow", sans-serif;
+  color: #23303e; }
 
-/*body {
+body {
   font-size: 1.8rem;
-  background-image: url(../design/mobile-design.jpg);
+  /*background-image: url(../design/mobile-design.jpg);
   background-size: 375px;
   background-repeat: no-repeat;
-  opacity: 0.7;
-}*/
+  opacity: 0.7;*/ }
+
 .nav {
   padding: 3.5rem 2.5rem;
   display: flex;
@@ -35,7 +36,91 @@ html {
     padding: 6rem 1rem;
     text-align: center; }
   .header__arrow {
-    margin-top: 6rem; }
+    margin: 6.5rem 0; }
+
+.s-features {
+  display: grid; }
+
+.container__heading {
+  font-family: "Fraunces", serif;
+  font-size: 3.5rem; }
+  .container__heading--graphic {
+    color: #25564b; }
+  .container__heading--photo {
+    color: #19536b; }
+  .container__heading--small {
+    font-size: 3rem; }
+
+.container__content {
+  font-size: 2rem;
+  padding: 2.5rem 1.5rem;
+  color: #818498;
+  line-height: 3rem;
+  font-weight: 500; }
+  .container__content--graphic {
+    color: #25564b; }
+  .container__content--photo {
+    color: #19536b; }
+  .container__content--small {
+    font-size: 1.5rem; }
+
+.container__btn {
+  margin: 3rem 0; }
+
+.container--text {
+  padding: 7rem 3rem;
+  text-align: center; }
+
+.container--text-img {
+  text-align: center;
+  padding: 45rem 2rem 4rem 2rem; }
+  .container--text-img--1 {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .container--text-img--2 {
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.s-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem; }
+  .s-testimonials__heading {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    color: #818498;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; }
+  .s-testimonials__testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3.5rem 2rem; }
+
+.testimonial__img {
+  width: 7rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 1rem 0; }
+
+.testimonial__content {
+  font-size: 1.7rem;
+  padding: 1.5rem 0;
+  color: #5a636c;
+  line-height: 3rem;
+  font-weight: 500; }
+
+.testimonial__name {
+  font-family: "Fraunces", serif;
+  padding: 1rem 0; }
+
+.testimonial__occup {
+  font-size: 1.3rem;
+  color: #818498; }
 
 .attribution {
   font-size: 11px;
