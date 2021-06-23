@@ -143,3 +143,89 @@
     color: $color-grey-light;
   }
 }
+
+.s-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.footer {
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+
+  padding: 4rem;
+
+  &__logo {
+    filter: invert(35%) sepia(3%) saturate(5644%) hue-rotate(116deg)
+      brightness(60%) contrast(101%);
+  }
+
+  &__menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    padding: 3rem 1rem;
+  }
+
+  &__item {
+    padding: 0.5rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-footer-text;
+      text-decoration: none;
+      padding: 0.2rem 2rem 0.2rem 0.5rem;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(
+        to right,
+        $color-primary 0%,
+        $color-primary 5px,
+        transparent
+      );
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+
+    padding: 4rem 0;
+  }
+
+  &__icon {
+    padding: 1rem;
+  }
+
+  &__icon-link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-footer-text;
+      text-decoration: none;
+      padding: 1rem 1rem 0.5rem 0.8rem;
+      border-radius: 50%;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(
+        to right,
+        $color-primary 0%,
+        $color-primary 5px,
+        transparent
+      );
+    }
+  }
+}
