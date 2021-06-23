@@ -1,0 +1,49 @@
+.btn {
+  &--learn-more {
+    &,
+    &:link,
+    &:visited {
+      background-color: transparent;
+      color: $color-grey-very-dark;
+      text-decoration: none;
+      text-decoration-color: $color-secondary;
+
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 1.8rem;
+      font-family: $font-secondary;
+      font-weight: 900;
+      border: 1px solid $color-white;
+      border-radius: 8px;
+      cursor: pointer;
+
+      padding: 0.5rem;
+
+      background-repeat: no-repeat;
+      background-size: 100% 0.6em;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 88%;
+    }
+
+    &--yellow {
+      background-image: linear-gradient(
+        120deg,
+        $color-secondary-v 0%,
+        $color-secondary-v 100%
+      );
+    }
+
+    &--pink {
+      background-image: linear-gradient(
+        120deg,
+        $color-primary-v 0%,
+        $color-primary-v 100%
+      );
+    }
+  }
+}

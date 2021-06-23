@@ -1,6 +1,96 @@
+.footer {
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+
+  padding: 4rem;
+
+  &__logo {
+    filter: invert(35%) sepia(3%) saturate(5644%) hue-rotate(116deg)
+      brightness(60%) contrast(101%);
+  }
+
+  &__menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    padding: 3rem 1rem;
+
+    @include respond(phone) {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-footer-text;
+      text-decoration: none;
+      padding: 0.2rem 2rem 0.2rem 0.5rem;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(
+        to right,
+        $color-primary 0%,
+        $color-primary 5px,
+        transparent
+      );
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+
+    padding: 4rem 0;
+
+    @include respond(phone) {
+      width: 40%;
+    }
+  }
+
+  &__icon {
+    padding: 1rem;
+  }
+
+  &__icon-link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-footer-text;
+      text-decoration: none;
+      padding: 1rem 1rem 0.5rem 0.8rem;
+      border-radius: 50%;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(
+        to right,
+        $color-primary 0%,
+        $color-primary 5px,
+        transparent
+      );
+    }
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: $color-footer;
+  padding: 1rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

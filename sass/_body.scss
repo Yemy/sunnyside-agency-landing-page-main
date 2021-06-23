@@ -3,12 +3,21 @@
   background-image: url(../images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 
   font-size: 4.5rem;
   color: $color-white;
   font-family: $font-secondary;
   text-transform: uppercase;
   letter-spacing: 0.8rem;
+
+  @include respond(phone) {
+    background-image: url(../images/desktop/image-header.jpg);
+  }
+
+  @include respond(tablet) {
+    height: 80vh;
+  }
 
   &__content {
     padding: 6rem 1rem;
@@ -22,12 +31,23 @@
 
 .s-features {
   display: grid;
+
+  @include respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-template-areas: "transform egg";
+  }
 }
 
 .container {
   &__heading {
     font-family: $font-secondary;
     font-size: 3.5rem;
+
+    @include respond(tablet) {
+      font-size: 3.5rem;
+      text-align: left;
+    }
 
     &--graphic {
       color: $color-graphic-text;
@@ -39,6 +59,11 @@
 
     &--small {
       font-size: 3rem;
+
+      @include respond(tablet) {
+        text-align: center;
+        font-size: 3.5rem;
+      }
     }
   }
 
@@ -48,6 +73,16 @@
     color: $color-grey-light;
     line-height: 3rem;
     font-weight: 500;
+
+    @include respond(phone) {
+      padding: 3rem 0;
+    }
+
+    @include respond(tablet) {
+      font-size: 2.2rem;
+      padding: 1.5rem 0;
+      line-height: 4rem;
+    }
 
     &--graphic {
       color: $color-graphic-text;
@@ -59,32 +94,103 @@
 
     &--small {
       font-size: 1.5rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+        padding: 2.5rem 10rem;
+      }
+
+      @include respond(tablet) {
+        font-size: 2.8rem;
+      }
     }
   }
 
   &__btn {
     margin: 3rem 0;
+
+    @include respond(tablet) {
+      margin: 1rem;
+    }
   }
 
   &--text {
     padding: 7rem 3rem;
     text-align: center;
+
+    @include respond(tablet) {
+      padding: 5rem 5rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
   }
 
   &--text-img {
     text-align: center;
-    padding: 45rem 2rem 4rem 2rem;
+    padding: 48rem 2rem 4rem 2rem;
+
+    @include respond(tablet) {
+      padding-top: 60rem;
+    }
+
+    @include respond(desktop) {
+      padding-top: 70rem;
+      padding-bottom: 10rem;
+    }
+
     &--1 {
       background-image: url(../images/mobile/image-graphic-design.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include respond(phone) {
+        background-image: url(../images/desktop/image-graphic-design.jpg);
+        background-position: center;
+      }
     }
 
     &--2 {
       background-image: url(../images/mobile/image-photography.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include respond(phone) {
+        background-image: url(../images/desktop/image-photography.jpg);
+        background-position: center;
+      }
     }
+  }
+
+  &--img {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  &--1 {
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include respond(tablet) {
+      grid-area: egg;
+    }
+  }
+
+  &--2 {
+    @include respond(tablet) {
+      grid-area: transform;
+    }
+  }
+
+  &--3 {
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -94,15 +200,30 @@
   align-items: center;
 
   padding: 4rem 2rem;
+
+  @include respond(phone) {
+    padding: 8rem 4rem;
+  }
+
+  &__grid {
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
   &__heading {
     font-size: 2rem;
     font-family: $font-secondary;
     color: $color-grey-light;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-  }
 
-  &__grid {
+    @include respond(tablet) {
+      font-size: 3rem;
+    }
   }
 
   &__testimonial {
@@ -112,6 +233,18 @@
     text-align: center;
 
     padding: 3.5rem 2rem;
+
+    @include respond(phone) {
+      width: 500px;
+    }
+
+    @include respond(tablet) {
+      padding: 5rem 2rem;
+    }
+
+    @include respond(desktop) {
+      width: 400px;
+    }
   }
 }
 
@@ -122,6 +255,14 @@
     border-radius: 50%;
 
     padding: 1rem 0;
+
+    @include respond(phone) {
+      width: 9rem;
+    }
+
+    @include respond(tablet) {
+      width: 11rem;
+    }
   }
 
   &__content {
@@ -130,17 +271,30 @@
     color: $color-grey-dark;
     line-height: 3rem;
     font-weight: 500;
+
+    @include respond(tablet) {
+      font-size: 2.2rem;
+      line-height: 4rem;
+    }
   }
 
   &__name {
     font-family: $font-secondary;
 
     padding: 1rem 0;
+
+    @include respond(tablet) {
+      font-size: 2.5rem;
+    }
   }
 
   &__occup {
     font-size: 1.3rem;
     color: $color-grey-light;
+
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -148,84 +302,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-}
 
-.footer {
-  background-color: $color-footer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-around;
-
-  padding: 4rem;
-
-  &__logo {
-    filter: invert(35%) sepia(3%) saturate(5644%) hue-rotate(116deg)
-      brightness(60%) contrast(101%);
+  @include respond(phone) {
+    justify-items: center;
   }
 
-  &__menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-
-    padding: 3rem 1rem;
-  }
-
-  &__item {
-    padding: 0.5rem;
-  }
-
-  &__link {
-    &,
-    &:link,
-    &:visited {
-      color: $color-footer-text;
-      text-decoration: none;
-      padding: 0.2rem 2rem 0.2rem 0.5rem;
-    }
-
-    &:hover,
-    &:active {
-      background: linear-gradient(
-        to right,
-        $color-primary 0%,
-        $color-primary 5px,
-        transparent
-      );
-    }
-  }
-
-  &__social-media {
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-
-    padding: 4rem 0;
-  }
-
-  &__icon {
-    padding: 1rem;
-  }
-
-  &__icon-link {
-    &,
-    &:link,
-    &:visited {
-      color: $color-footer-text;
-      text-decoration: none;
-      padding: 1rem 1rem 0.5rem 0.8rem;
-      border-radius: 50%;
-    }
-
-    &:hover,
-    &:active {
-      background: linear-gradient(
-        to right,
-        $color-primary 0%,
-        $color-primary 5px,
-        transparent
-      );
-    }
+  @include respond(phone-big) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 }
