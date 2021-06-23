@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -12,25 +15,126 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <div class="attribution">
+    <div class="page__wrapper">
+      <header class="header">
+        <nav class="nav">
+          <img src="./images/logo.svg" alt="SunnySide Logo" class="nav__logo" />
+          <button class="nav__ham-button">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="Mobile menu icon"
+              class="nav__ham-button-img"
+            />
+          </button>
+          <!-- html structure for nav for desktop
+            <div class="nav__desktop">
+            <ul class="desktop__menu">
+              <li class="desktop__item"><a href="" class="desktop__link">About</a></li>
+              <li class="desktop__item"><a href="" class="desktop__link">Services</a></li>
+              <li class="desktop__item"><a href="" class="desktop__link">Project</a></li>
+            </ul>
+            <button class="desktop__contact-btn">Contact</button>
+          </div>
+          -->
+        </nav>
+        <div class="header__content">
+          <h1 class="header__heading">We are creatives</h1>
+          <img
+            src="./images/icon-arrow-down.svg"
+            alt="Icon arrow down"
+            class="header__arrow"
+          />
+        </div>
+      </header>
+
+      <section class="s-features">
+        <article
+          class="s-features__container container container--text container--1"
+        >
+          <h2 class="container__heading">Transform your brand</h2>
+          <p class="container__content">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <button class="btn btn--learn-more container__btn">Learn more</button>
+        </article>
+        <article
+          class="s-features__container container container--img container--2"
+        >
+          <img
+            src="./images/mobile/image-transform.jpg"
+            alt="Image of egg"
+            class="container__img"
+          />
+        </article>
+        <article
+          class="s-features__container container container--img container--3"
+        >
+          <img
+            src="./images/mobile/image-stand-out.jpg"
+            alt="Image of glass"
+            class="container__img"
+          />
+        </article>
+        <article
+          class="s-features__container container container--text container--4"
+        >
+          <h2 class="container__heading">Stand out to the right audience</h2>
+          <p class="container__content">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <button class="btn btn--learn-more container__btn">Learn more</button>
+        </article>
+        <article
+          class="
+            s-features__container
+            container container--text-img container--5
+          "
+        >
+          <h3 class="container__heading container__heading--small">
+            Graphic design
+          </h3>
+          <p class="container__content container__content--center">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </article>
+        <article
+          class="
+            s-features__container
+            container container--text-img container--6
+          "
+        >
+          <h3 class="container__heading container__heading--small">
+            Photography
+          </h3>
+          <p class="container__content container__content--center">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <!--<div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div>  -->
   </body>
 </html>
