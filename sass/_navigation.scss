@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
 
+  position: relative;
+
   &__ham-button {
     background-color: transparent;
     border: 1px solid $color-primary;
@@ -12,4 +14,86 @@
     width: max-content;
     height: max-content;
   }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 85%;
+    padding: 3rem;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 3rem;
+
+    background-color: $color-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 0;
+
+      width: 0;
+      height: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid $color-white;
+      border-left: 100px solid transparent;
+    }
+  }
+}
+
+.menu {
+  &__box {
+    padding: 3rem 0;
+  }
+
+  &__item {
+    padding: 0.5rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      background-color: transparent;
+      color: $color-grey-light;
+      text-decoration: none;
+      text-decoration-color: $color-secondary;
+
+      display: inline-block;
+      font-size: 2.5rem;
+      font-family: $font-primary;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+
+      padding: 1rem;
+
+      background-image: linear-gradient(
+        120deg,
+        $color-primary-v 0%,
+        $color-primary-v 100%
+      );
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 88%;
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }
