@@ -22,6 +22,11 @@ body {
   border: 1px solid white;
   cursor: pointer;
   transition: all 0.35s; }
+  @media (min-width: 900px) {
+    .btn--contact, .btn--contact:link, .btn--contact:visited {
+      height: 40px;
+      font-size: 1.2rem;
+      background-color: white; } }
 
 .btn--contact:hover, .btn--contact:active {
   background-color: #fe7867; }
@@ -59,6 +64,8 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative; }
+  .nav__logo {
+    align-self: flex-start; }
   .nav__ham-button {
     background-color: transparent;
     border: 1px solid #fe7867;
@@ -66,6 +73,9 @@ body {
     border-style: none;
     width: max-content;
     height: max-content; }
+    @media (min-width: 900px) {
+      .nav__ham-button {
+        display: none; } }
   .nav__menu {
     display: flex;
     flex-direction: column;
@@ -80,6 +90,15 @@ body {
     transform: translateX(-50%);
     font-size: 3rem;
     background-color: white; }
+    @media (min-width: 900px) {
+      .nav__menu {
+        position: static;
+        flex-direction: row;
+        transform: translateX(0);
+        background-color: transparent;
+        padding: 0;
+        text-align: right;
+        justify-content: flex-end; } }
     .nav__menu::after {
       content: "";
       position: absolute;
@@ -91,9 +110,16 @@ body {
       height: 0;
       border-bottom: 100px solid white;
       border-left: 100px solid transparent; }
+      @media (min-width: 900px) {
+        .nav__menu::after {
+          display: none; } }
 
 .menu__box {
   padding: 3rem 0; }
+  @media (min-width: 900px) {
+    .menu__box {
+      display: flex;
+      padding: 0 3rem 0 0; } }
 
 .menu__item {
   padding: 0.5rem; }
@@ -115,12 +141,19 @@ body {
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in; }
+  @media (min-width: 900px) {
+    .menu__link, .menu__link:link, .menu__link:visited {
+      font-size: 2rem;
+      color: white; } }
 
 .menu__link:hover, .menu__link:active {
   background-size: 100% 88%; }
 
 .hidden {
   display: none; }
+  @media (min-width: 900px) {
+    .hidden {
+      display: flex; } }
 
 .fade-in-menu {
   animation: fadeIn 1s; }

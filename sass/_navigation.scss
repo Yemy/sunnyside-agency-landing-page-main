@@ -6,6 +6,10 @@
 
   position: relative;
 
+  &__logo {
+    align-self: flex-start;
+  }
+
   &__ham-button {
     background-color: transparent;
     border: 1px solid $color-primary;
@@ -13,6 +17,10 @@
     border-style: none;
     width: max-content;
     height: max-content;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 
   &__menu {
@@ -33,6 +41,16 @@
 
     background-color: $color-white;
 
+    @include respond(tablet) {
+      position: static;
+      flex-direction: row;
+      transform: translateX(0);
+      background-color: transparent;
+      padding: 0;
+      text-align: right;
+      justify-content: flex-end;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -45,6 +63,10 @@
       height: 0;
       border-bottom: 100px solid $color-white;
       border-left: 100px solid transparent;
+
+      @include respond(tablet) {
+        display: none;
+      }
     }
   }
 }
@@ -52,6 +74,11 @@
 .menu {
   &__box {
     padding: 3rem 0;
+
+    @include respond(tablet) {
+      display: flex;
+      padding: 0 3rem 0 0;
+    }
   }
 
   &__item {
@@ -85,6 +112,11 @@
       background-size: 100% 0.2em;
       background-position: 0 88%;
       transition: background-size 0.25s ease-in;
+
+      @include respond(tablet) {
+        font-size: 2rem;
+        color: $color-white;
+      }
     }
 
     &:hover,
@@ -96,6 +128,10 @@
 
 .hidden {
   display: none;
+
+  @include respond(tablet) {
+    display: flex;
+  }
 }
 
 .fade-in-menu {

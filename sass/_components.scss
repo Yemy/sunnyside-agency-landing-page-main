@@ -19,6 +19,12 @@
       cursor: pointer;
 
       transition: all 0.35s;
+
+      @include respond(tablet) {
+        height: 40px;
+        font-size: 1.2rem;
+        background-color: $color-white;
+      }
     }
 
     &:hover,
