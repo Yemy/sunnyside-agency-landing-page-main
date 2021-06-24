@@ -217,6 +217,10 @@
     padding: 8rem 4rem;
   }
 
+  @include respond(desktop) {
+    padding: 20rem 0;
+  }
+
   &__grid {
     @include respond(desktop) {
       display: grid;
@@ -235,6 +239,10 @@
 
     @include respond(tablet) {
       font-size: 3rem;
+    }
+
+    @include respond(tablet) {
+      margin-bottom: 10rem;
     }
   }
 

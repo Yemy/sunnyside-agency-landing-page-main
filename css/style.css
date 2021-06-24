@@ -329,6 +329,9 @@ body {
     .s-testimonials {
       padding: 8rem 4rem; } }
   @media (min-width: 1200px) {
+    .s-testimonials {
+      padding: 20rem 0; } }
+  @media (min-width: 1200px) {
     .s-testimonials__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -343,6 +346,9 @@ body {
     @media (min-width: 900px) {
       .s-testimonials__heading {
         font-size: 3rem; } }
+    @media (min-width: 900px) {
+      .s-testimonials__heading {
+        margin-bottom: 10rem; } }
   .s-testimonials__testimonial {
     display: flex;
     flex-direction: column;
