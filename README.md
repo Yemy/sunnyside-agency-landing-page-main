@@ -64,4 +64,4 @@ I want to five deeper into JS animations.
 
 - Website - [Axseinga](https://www.your-site.com)
 - Frontend Mentor - [@Axseinga](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/agnieszka-urbanowicz-051147151/)
+- LinkedIn - [Agnieszka Urbanowicz](https://www.linkedin.com/in/agnieszka-urbanowicz-051147151/)
