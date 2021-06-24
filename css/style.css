@@ -202,6 +202,9 @@ body {
     .container__heading {
       font-size: 3.5rem;
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .container__heading {
+      font-size: 5rem; } }
   .container__heading--graphic {
     color: #25564b; }
   .container__heading--photo {
@@ -243,9 +246,6 @@ body {
 
 .container__btn {
   margin: 3rem 0; }
-  @media (min-width: 900px) {
-    .container__btn {
-      margin: 1rem; } }
 
 .container--text {
   padding: 7rem 3rem;
@@ -270,7 +270,7 @@ body {
       padding-top: 60rem; } }
   @media (min-width: 1200px) {
     .container--text-img {
-      padding-top: 70rem;
+      padding-top: 50rem;
       padding-bottom: 10rem; } }
   .container--text-img--1 {
     background-image: url(../images/mobile/image-graphic-design.jpg);

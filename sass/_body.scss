@@ -48,6 +48,10 @@
       text-align: left;
     }
 
+    @include respond(desktop) {
+      font-size: 5rem;
+    }
+
     &--graphic {
       color: $color-graphic-text;
     }
@@ -107,10 +111,6 @@
 
   &__btn {
     margin: 3rem 0;
-
-    @include respond(tablet) {
-      margin: 1rem;
-    }
   }
 
   &--text {
@@ -140,7 +140,7 @@
     }
 
     @include respond(desktop) {
-      padding-top: 70rem;
+      padding-top: 50rem;
       padding-bottom: 10rem;
     }
 
