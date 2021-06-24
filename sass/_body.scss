@@ -125,6 +125,10 @@
       align-items: flex-start;
       justify-content: center;
     }
+
+    @include respond(desktop) {
+      padding: 18rem;
+    }
   }
 
   &--text-img {

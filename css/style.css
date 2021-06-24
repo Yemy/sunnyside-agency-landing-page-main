@@ -258,6 +258,9 @@ body {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; } }
+  @media (min-width: 1200px) {
+    .container--text {
+      padding: 18rem; } }
 
 .container--text-img {
   text-align: center;
