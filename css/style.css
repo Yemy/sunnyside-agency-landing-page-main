@@ -189,10 +189,10 @@ body {
 
 .s-features {
   display: grid; }
-  @media (min-width: 900px) {
+  @media (min-width: 750px) {
     .s-features {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, min-content) 1fr;
+      grid-template-rows: repeat(2, mix-content) 1fr;
       grid-template-areas: "transform egg"; } }
 
 .container__heading {
@@ -252,7 +252,7 @@ body {
   text-align: center; }
   @media (min-width: 900px) {
     .container--text {
-      padding: 5rem 5rem;
+      padding: 7rem;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -295,9 +295,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  @media (min-width: 900px) {
+  @media (min-width: 750px) {
     .container--1 {
-      grid-area: egg; } }
+      grid-area: egg;
+      background-image: url(../images/desktop/image-transform.jpg);
+      height: 100%;
+      width: 100%; } }
 
 @media (min-width: 900px) {
   .container--2 {
@@ -308,6 +311,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media (min-width: 750px) {
+    .container--3 {
+      background-image: url(../images/desktop/image-stand-out.jpg);
+      height: 100%;
+      width: 100%; } }
 
 .s-testimonials {
   display: flex;

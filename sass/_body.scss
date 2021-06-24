@@ -31,9 +31,9 @@
 .s-features {
   display: grid;
 
-  @include respond(tablet) {
+  @include respond(phone-big) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-template-rows: repeat(2, mix-content) 1fr;
     grid-template-areas: "transform egg";
   }
 }
@@ -118,7 +118,7 @@
     text-align: center;
 
     @include respond(tablet) {
-      padding: 5rem 5rem;
+      padding: 7rem;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -174,8 +174,11 @@
     background-size: cover;
     background-position: center;
 
-    @include respond(tablet) {
+    @include respond(phone-big) {
       grid-area: egg;
+      background-image: url(../images/desktop/image-transform.jpg);
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -190,6 +193,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include respond(phone-big) {
+      background-image: url(../images/desktop/image-stand-out.jpg);
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
