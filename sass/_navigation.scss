@@ -3,12 +3,9 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   position: relative;
-
-  &__logo {
-    align-self: flex-start;
-  }
 
   &__ham-button {
     background-color: transparent;
